@@ -1,0 +1,904 @@
+/*
+Theme Name: Sligo County Child Care
+Author: Aidan Burke
+Version: 1.0
+*/
+@media (min-width: 1000px){
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: arial;
+    background-color: #EEFFEB;
+    padding: 0px;
+    margin: 0px;
+}
+
+a:link,
+a:visited{
+    color: #006ec3;
+}
+
+/* General Layout */
+div.container{
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/* Header Styling */
+.site-header{
+    padding: 20px;
+    color: black;
+}
+
+.site-header .main-header-block{
+    float:left;
+    display:block;
+    width:66%;
+}
+
+.site-header .cci-logo{
+  float: right;
+  display: block;
+  width: 25%;
+  margin-top: -10px;
+}
+
+.site-header .cci-logo img{
+  width: 78%;
+  height: 78%;
+  float: right;
+}
+
+.site-header a{
+    text-decoration: none;
+    color: black;
+}
+
+.site-header h1{
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    margin: 0px;
+}
+
+.site-header h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.site-header img{
+    float:left;
+    padding-right: 20px;
+}
+
+/* Navigation Menus */
+.site-nav{
+    background-color: #25933A;
+    height:50px;
+    box-shadow: 0px 2px 0 #b5b5b5;
+}
+
+.site-nav ul, .site-nav li{
+    display: inline-block;
+}
+
+.site-nav a{
+    padding: 0 19px 0 19px;
+    text-decoration: none;
+    line-height: 50px;
+    display:block;
+    color:#fff;
+    font-weight:bold;
+    font-size: 11pt;
+}
+
+.site-nav a:hover{
+    background: #2FB547;
+}
+
+.site-nav ul ul a{
+    width: 190px;
+    line-height:40px;
+    padding: 0 20px 0 20px;
+    display: block;
+}
+
+.site-nav ul li{
+    position: relative;
+    float: left;
+    z-index: 100;
+}
+
+.site-nav ul ul{
+    position: absolute;
+    top: -9999999px;
+    left:0px;
+    opacity: 0;
+    background: #25933A;
+    text-align: left;
+    box-shadow: 2px 2px 0 #b5b5b5;
+    z-index: 100;
+}
+
+.site-nav ul li:hover > ul{
+    position: absolute;
+    top:100%;
+    opacity: 1;
+    z-index: 100;
+}
+
+/* Homepage styling */
+
+.carousel-box{
+    height: 300px;
+    width: 960px;
+    margin: 20px;
+    float: left;
+    position: relative;
+    z-index: 4;
+}
+
+.news-box h2{
+    padding-bottom: 10px;
+}
+
+.info-box{
+    float:left;
+}
+
+.search-box{
+    height: 116px;
+    width: 260px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0px 0px 0px;
+}
+
+.search-box lable{
+    position: absolute;
+    left: -9999px;
+}
+
+.search-box #searchsubmit{
+    background-color: #25933A;
+    color:white;
+    padding:10px;
+    border:none;
+    font-weight: bold;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.search-box #s{
+    padding:5px;
+    margin-top: 13px;
+    width: 92%;
+}
+
+.contact-box{
+    width: 440px;
+    height: 190px;
+    padding: 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin: 0px 20px 20px 20px;
+    float:left;
+}
+
+.newsletter-box{
+    width: 440px;
+    height: 190px;
+    padding: 15px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin: 0px 0px 20px 0px;
+    float: left;
+}
+
+.featured-slide{
+}
+
+.featured-slide img{
+    position:relative;
+    display:block;
+    z-index:-1;
+}
+
+.featured-slide-text{
+    position:relative;
+    top:-90px;
+    height:70px;
+    z-index:2;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding:10px;
+}
+
+.featured-slide-text a:link,
+.featured-slide-text a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.news-box{
+    height: 490px;
+    width: 620px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    margin: 0px 20px 20px 20px;
+    float: left;
+    padding:15px;
+    position: relative;
+    z-index: 5;
+}
+
+.news-box .sub-news-box:first-of-type{
+    margin-top:0px;
+}
+
+.news-box .sub-news-box{
+    border-bottom: 2px solid #E5E5E5;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    height:29%;
+    font-size: 11.5pt;
+}
+
+.news-box .sub-news-box:last-of-type{
+    border-bottom: 2px solid white;
+}
+
+.sub-news-box img{
+    float:left;
+    margin : 0px 15px 15px 0px;
+}
+
+.sub-news-box h3{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 8px;
+}
+
+.sub-news-box p{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 8px;
+}
+
+.sub-news-box span{
+    position:relative;
+    top: -10px;
+    text-align: left;
+}
+
+.facebook-box{
+    position:relative;
+    z-index: 5;
+}
+
+/* Front Page Info Boxes */
+
+.contact-box p{
+    font-size: 11.5pt;
+}
+
+.contact-box h3{
+    margin-bottom: 6px;
+}
+
+.contact-box h3 a:link,
+.contact-box h3 a:visited{
+    text-decoration: none;
+    color:black
+}
+
+.contact-box p a:link,
+.contact-box p a:visited{
+    text-decoration: underline;
+}
+
+.newsletter-box ul{
+    padding-left:20px;
+}
+
+.newsletter-box h3{
+    margin-bottom: 6px;
+}
+
+.newsletter-box li{
+    padding-top: 5px;
+    display: inline;
+}
+
+/* News Page */
+
+.news-page-main{
+    margin: 10px;
+    padding: 10px;
+}
+
+.news-page-main h1{
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+.news-story-sub{
+    padding: 15px;
+}
+
+.news-story-sub:nth-of-type(odd)
+{
+    background-color: #EEFFEB;
+}
+
+.news-story-sub h6{
+    padding-bottom: 10px;
+    color:#25933A;
+}
+
+.news-story-sub .read-more{
+    padding:10px;
+    background-color: #25933A;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    width:80px;
+}
+
+.news-story-sub .read-more a:link,
+.news-story-sub .read-more a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+.news-story-sub a:link,
+.news-story-sub a:visited{
+    text-decoration: none;
+}
+
+.news-page-main .previous-posts{
+    float:left;
+    width:15%;
+    padding-top: 10px;
+}
+
+.news-page-main .next-posts{
+    float: right;
+    width:10%;
+    padding-top: 10px;
+}
+
+/* Page Styling */
+
+.page-post{
+    margin:20px;
+}
+
+.page-post h1{
+    font-weight:lighter;
+    font-size: 26pt;
+    margin-bottom: 0px;
+}
+
+.page-post p{
+    padding:0px;
+
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.page-post p:first-of-type{
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.page-post p:last-of-type{
+    padding-bottom: 0px;
+}
+
+.page-post ul{
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+
+.page-post ul li{
+    padding-bottom: 10px;
+}
+
+.page-post h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-post h2{
+    margin-top: 18px;
+    margin-bottom:18px;
+}
+
+.page-post h4
+{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.page-post h5{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.page-post table{
+    border: 1px solid #E5E5E5;
+}
+
+.page-post table tr:nth-of-type(odd)
+{
+    background-color: #EEFFEB;
+}
+
+.page-post table tr td{
+    padding: 7px;
+}
+
+.page-post ol{
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+.page-post ol li{
+    padding-top: 2px;
+}
+
+.page-post ol li ul{
+    padding-top: 3px;
+}
+
+.page-post ol li ul li{
+    padding-bottom: 2px;
+}
+
+.page-post ul{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.page-post ol{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Post Styling */
+
+.post{
+    padding:20px;
+}
+
+.post h2{
+    font-weight:lighter;
+}
+
+.post h6{
+    color:#25933A;
+}
+
+.post p{
+    margin-top: 18px;
+}
+
+.post ul{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.post ol{
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Search results Page */
+
+.search-result{
+    padding: 15px;
+}
+
+.search-result:nth-of-type(odd)
+{
+    background-color: #EEFFEB;
+}
+
+.search-result h2{
+    padding-bottom: 5px;
+}
+
+.search-result p{
+}
+
+.search-results a:link,
+.search-results a:visited{
+    text-decoration: none;
+}
+
+.search-results .previous-posts{
+    float:left;
+    width:15%;
+}
+
+.search-results .next-posts{
+    float: right;
+    width:10%;
+}
+
+/* Footer */
+.site-footer{
+    padding:20px 20px 5px 20px;
+    color: white;
+
+    background: #25933a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #25933a 0%, #43b243 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25933a), color-stop(100%,#43b243)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #25933a 0%,#43b243 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #25933a 0%,#43b243 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #25933a 0%,#43b243 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #25933a 0%,#43b243 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25933a', endColorstr='#43b243',GradientType=0 ); /* IE6-9 */
+}
+
+.site-footer a{
+    color: white;
+}
+
+.clearfix{
+    display:block;
+    clear:both;
+}
+
+.site-footer nav{
+    font-size: 9.5pt;
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+    padding-left: 100px;
+}
+
+.site-footer ul{
+    list-style: none;
+}
+
+.site-footer ul li{
+    font-weight: bold;
+    display:inline;
+    padding:8px;
+    float:left;
+    font-size: 10pt;
+}
+
+.site-footer .footer-nav{
+}
+
+.footer-right img{
+    width:100%;
+}
+
+.footer-left img{
+    width:100%;
+    margin-top: 18px;
+}
+
+.site-footer .main-sponsor{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.site-footer .sub-sponsor{
+    padding:20px;
+    text-align: center;
+}
+
+.site-footer .sub-sponsor .tulsa-logo{
+    height: 60px;
+}
+.site-footer p{
+    text-align: center;
+    font-size: 11pt;
+}
+
+.admin-link a{
+    font-size: 8pt;
+    color:#7BDD8E;
+}
+
+/* Image Styles */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.handle{
+    width:100%;
+    background: #25933A;
+    text-align: left;
+    cursor: pointer;
+    padding: 18px;
+    color: white;
+    font-weight: bold;
+    display:none;
+}
+}
+
+/* Mobile version of site */
+
+@media (max-width: 999px){
+  *{
+      padding: 0px;
+      margin: 0px;
+  }
+
+    div.container{
+        width: 100%;
+    }
+
+    a:link,
+    a:visited{
+      color: #006ec3;
+    }
+
+    /* Header */
+    .site-header{
+    }
+
+    .site-header .main-header-block{
+        width: 100%;
+    }
+
+    .site-header .main-header-block img{
+      padding: 10px;
+      height: 60px;
+      width: 60px;
+    }
+
+    .site-header .main-header-block h1{
+      padding-left: 10px;
+      padding-bottom: 3px;
+    }
+
+    .site-header .main-header-block h1 a{
+      text-decoration: none;
+      color: black;
+      font-size: 18pt;
+    }
+
+    .site-header .main-header-block h4{
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+
+    .site-header .cci-logo{
+      position:absolute;
+      top: 0px;
+      right: -30px;
+    }
+
+    .site-header .cci-logo img{
+      width: 80%;
+      height: 80%;
+    }
+
+    /* Nav Menu */
+    .site-nav{
+      display: none;
+      background: #2FB547;
+      margin-bottom: 10px;
+    }
+
+    .site-nav ul {
+      list-style-type: none;
+    }
+
+    .site-nav ul ul{
+      background: #1dc93c;
+      padding-left: 10px;
+    }
+
+    .site-nav a{
+        padding:10px;
+        text-decoration: none;
+        color:#fff;
+        font-weight:bold;
+        font-size: 12pt;
+        display: inline-block;
+    }
+
+    .handle{
+        display:block;
+        padding: 10px;
+        font-weight:bold;
+        font-size: 12pt;
+        background-color: #25933A;
+        color:#fff;
+    }
+
+    /* Home Page */
+
+    .carousel-box{
+      display:none;
+    }
+
+    .info-box .facebook-box{
+      display: none;
+    }
+
+    .news-box{
+      width: auto;
+    }
+
+    .news-box .sub-news-box{
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-style: solid;
+      border-width: 1px 0px 1px 0px;
+      border-color: #E5E5E5;
+    }
+
+    .news-box .sub-news-box img{
+      float:left;
+      width: 60px;
+      height: 60px;
+      padding: 7px;
+    }
+
+    .info-box .search-box{
+      width: auto;
+      background-color: #25933A;
+      color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .info-box .search-box form div h3{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .info-box .search-box form div input[type=text]{
+      width: 100%;
+      padding: 7px 10px;
+      margin-bottom: 10px;
+      margin-left: -10px;
+      cursor: pointer;
+    }
+
+    .info-box .search-box form div input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    }
+
+    /* Footer */
+
+    .site-footer .footer-nav{
+      display: none;
+    }
+
+}
+
+/* Wordpress Core CSS */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
